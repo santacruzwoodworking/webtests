@@ -124,7 +124,7 @@ public class VerifySiteImages implements com.shipcore.sdk.IShipCore{
 		// our list. In this case, we don't provide a default value
 		// for the input. 
 		
-		TestInput urlInput = new TestInput(TestInput.TEXT, "Test URL", "http://www.bluedata.com");
+		TestInput urlInput = new TestInput(TestInput.TEXT, "Test URL", "http://www.yahoo.com");
 		inputs.add(urlInput);
 		
 		return inputs;

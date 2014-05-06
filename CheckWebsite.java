@@ -39,7 +39,7 @@ public class CheckWebsite implements com.shipcore.sdk.IShipCore{
 			resultLogs.add("The title of the website is: " + title);
 			
 			// assert on the title
-			if(!title.equals("BlueData inc")){
+			if(!title.equals("Yahoo")){
 				resultLogs.add("The title was not as expected, it was: " + title);
 				firstTestResult = new TestResult(TestResult.FAIL, "The website loaded, but the title was not what we expected", resultLogs);
 			}else{
@@ -68,7 +68,7 @@ public class CheckWebsite implements com.shipcore.sdk.IShipCore{
 	
 	
 	public String getDescription(){
-		return "A simple sanity check of the BlueData corporate website.";
+		return "A simple sanity check of the Yahoo website.";
 	}
 
 	
@@ -81,7 +81,7 @@ public class CheckWebsite implements com.shipcore.sdk.IShipCore{
 		// our list. In this case, we don't provide a default value
 		// for the input. 
 		
-		TestInput urlInput = new TestInput(TestInput.TEXT, "Test URL", "http://www.bluedata.com");
+		TestInput urlInput = new TestInput(TestInput.TEXT, "Test URL", "http://www.yahoo.com");
 		inputs.add(urlInput);
 		
 		return inputs;
